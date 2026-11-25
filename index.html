@@ -1,217 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ndombou Jerry - Portfolio</title>
-<meta name="description" content="Portfolio - data, machine learning et développement logiciel.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#EEF1F4; --ink:#14213D; --muted:#4A5873; --line:#CBD3DE;
-  --accent:#2B50E6; --accent-ink:#fff; --mint:#D3EADF; --card:#F8FAFB;
-  --head:'Sora','Trebuchet MS',sans-serif; --body:'Source Sans 3','Segoe UI',Arial,sans-serif;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{background:var(--paper);color:var(--ink);font:400 1.125rem/1.6 var(--body)}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-header{position:sticky;top:0;z-index:5;background:rgba(238,241,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;gap:22px;height:60px}
-nav .brand{display:flex;align-items:center;gap:10px;font:700 1rem var(--head);text-decoration:none;margin-right:auto}
-.brand-logo{display:block;width:38px;height:38px;flex:none}
-nav .brand-name{white-space:nowrap}
-nav a.link{text-decoration:none;font-weight:600;font-size:1rem;color:var(--muted)}
-nav a.link:hover{color:var(--accent)}
-.lang{display:flex;border:1px solid var(--ink);border-radius:6px;overflow:hidden}
-.lang button{font:600 .9rem var(--body);padding:4px 10px;background:none;border:0;color:var(--ink);cursor:pointer}
-.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.hero{padding:96px 0 80px}
-.hero .role{color:var(--muted);font-weight:600;margin-bottom:16px}
-.hero h1{font:800 clamp(2.8rem,9vw,6.2rem)/.98 var(--head);letter-spacing:-.03em;max-width:12ch}
-.hero p.pitch{font-size:1.3rem;max-width:34em;margin:28px 0 36px;color:var(--muted)}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:13px 24px;border-radius:8px;font:700 1rem var(--head);text-decoration:none;border:2px solid var(--ink)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.btn.primary:hover{background:var(--ink);border-color:var(--ink)}
-.btn.ghost:hover{background:var(--ink);color:var(--paper)}
-section{padding:72px 0;border-top:1px solid var(--line)}
-h2{font:700 clamp(1.7rem,4vw,2.3rem)/1.15 var(--head);letter-spacing:-.02em;margin-bottom:12px}
-.lead{color:var(--muted);max-width:38em;margin-bottom:40px}
-.projects{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
-.project{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column}
-.project h3{font:700 1.25rem var(--head);margin-bottom:10px}
-.project dl{margin:14px 0 18px}
-.project dt{font-weight:600;font-size:.95rem;color:var(--accent);margin-top:10px}
-.project dd{font-size:1rem}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
-.tags span{background:var(--mint);border-radius:999px;padding:2px 11px;font-size:.88rem;font-weight:600}
-.project a.more{margin-top:16px;font-weight:600;color:var(--accent)}
-.services{display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.services h3{font:700 1.15rem var(--head);margin-bottom:6px;padding-top:14px;border-top:3px solid var(--accent)}
-.services p{color:var(--muted);font-size:1.05rem}
-.about{display:grid;gap:40px;grid-template-columns:1.3fr 1fr}
-.skills{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
-.skills span{border:1px solid var(--ink);border-radius:6px;padding:3px 12px;font-weight:600;font-size:.98rem}
-.contact{text-align:left}
-.contact .mail{font:700 clamp(1.4rem,4vw,2.4rem) var(--head);letter-spacing:-.02em;word-break:break-all;display:inline-block;margin:10px 0 28px}
-footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
-@media(max-width:760px){.about{grid-template-columns:1fr}nav .link{display:none}.hero{padding:64px 0 56px}}
-@media(max-width:420px){nav{gap:12px}.brand-name{display:none}.brand-logo{width:34px;height:34px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Ndombou Kamdem Jerry : développement logiciel, data science et intelligence artificielle.">
+  <meta name="theme-color" content="#14213d">
+  <title>Ndombou Kamdem Jerry — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#eef1f4;--ink:#14213d;--muted:#4a5873;--line:#cbd3de;--accent:#2b50e6;--mint:#d3eadf;--card:#f8fafb;--head:'Sora','Trebuchet MS',sans-serif;--body:'Source Sans 3','Segoe UI',Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:var(--paper);color:var(--ink);font:400 1.125rem/1.6 var(--body)}a{color:inherit}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+    header{position:sticky;top:0;z-index:5;background:rgba(238,241,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}nav{display:flex;align-items:center;gap:22px;min-height:64px}nav .brand{display:flex;align-items:center;gap:10px;font:700 1rem var(--head);text-decoration:none;margin-right:auto}.brand-logo{width:38px;height:38px;flex:none}nav a.link{text-decoration:none;font-weight:600;font-size:1rem;color:var(--muted)}nav a.link:hover{color:var(--accent)}.lang{display:flex;border:1px solid var(--ink);border-radius:6px;overflow:hidden}.lang button{font:600 .9rem var(--body);padding:4px 10px;background:none;border:0;color:var(--ink);cursor:pointer}.lang button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+    .hero{padding:94px 0 82px}.hero .role{color:var(--muted);font-weight:700;margin:0 0 16px}.hero h1{font:800 clamp(2.8rem,9vw,6.1rem)/.98 var(--head);letter-spacing:-.04em;max-width:12ch;margin:0}.hero .pitch{font-size:1.3rem;max-width:36em;margin:28px 0 34px;color:var(--muted)}.btns{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-block;padding:11px 22px;border-radius:8px;font:700 1rem var(--head);text-decoration:none;border:2px solid var(--ink)}.btn.primary{background:var(--accent);border-color:var(--accent);color:white}.btn.primary:hover{background:var(--ink);border-color:var(--ink)}.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+    section{padding:68px 0;border-top:1px solid var(--line)}h2{font:700 clamp(1.7rem,4vw,2.3rem)/1.15 var(--head);letter-spacing:-.02em;margin:0 0 12px}.lead{color:var(--muted);max-width:42em;margin:0 0 34px}.projects{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}.project{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:25px;display:flex;flex-direction:column}.project .eyebrow{font-size:.86rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--accent);margin:0 0 6px}.project h3{font:700 1.25rem/1.35 var(--head);margin:0 0 10px}.project p{margin:0 0 12px}.project dl{margin:0 0 18px}.project dt{font-weight:700;font-size:.95rem;color:var(--accent);margin-top:10px}.project dd{margin:0;font-size:1rem;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}.tags span{background:var(--mint);border-radius:999px;padding:2px 11px;font-size:.88rem;font-weight:700}.project a.more{margin-top:16px;font-weight:700;color:var(--accent)}
+    .about{display:grid;gap:36px;grid-template-columns:1.2fr 1fr}.about p{margin:0}.skills{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}.skills span{border:1px solid var(--ink);border-radius:6px;padding:3px 12px;font-weight:600;font-size:.98rem}.contact .mail{font:700 clamp(1.4rem,4vw,2.4rem) var(--head);letter-spacing:-.02em;overflow-wrap:anywhere;display:inline-block;margin:8px 0 24px}footer{padding:26px 0 38px;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+    @media(max-width:760px){.about{grid-template-columns:1fr}nav .link{display:none}.hero{padding:64px 0 56px}}@media(max-width:420px){nav{gap:12px}.brand-name{display:none}.brand-logo{width:34px;height:34px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <nav aria-label="Navigation">
-      <a class="brand" href="#top" aria-label="Ndombou Jerry - Accueil">
-        <svg class="brand-logo" viewBox="0 0 40 40" role="img" aria-label="Logo NJ">
-          <rect width="40" height="40" rx="9" fill="#14213D"/>
-          <path d="M10 10v20h5V18l10 12h5V10h-5v12L15 10h-5Z" fill="#EEF1F4"/>
-          <circle cx="31" cy="9" r="4" fill="#2B50E6"/>
-        </svg>
-        <span class="brand-name">Ndombou Jerry</span>
-      </a>
-      <a class="link" href="#projects" data-i18n="nav.projects"></a>
-      <a class="link" href="#services" data-i18n="nav.services"></a>
-      <a class="link" href="#about" data-i18n="nav.about"></a>
-      <a class="link" href="#contact" data-i18n="nav.contact"></a>
-      <div class="lang" role="group" aria-label="Langue / Language">
-        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<main id="top">
-  <div class="wrap hero">
-    <p class="role" data-i18n="hero.role"></p>
-    <h1>Ndombou Kamdem Jerry</h1>
-    <p class="pitch" data-i18n="hero.pitch"></p>
-    <div class="btns">
-      <a class="btn primary" href="#projects" data-i18n="hero.cta1"></a>
-      <a class="btn ghost" href="#contact" data-i18n="hero.cta2"></a>
-      <a class="btn ghost" href="cv-fr.pdf" data-i18n="hero.cv" data-href-fr="cv-fr.pdf" data-href-en="cv-en.pdf" download></a>
-    </div>
-  </div>
-
-  <section id="projects"><div class="wrap">
-    <h2 data-i18n="projects.title"></h2>
-    <p class="lead" data-i18n="projects.lead"></p>
-    <div class="projects" id="projectList"></div>
-  </div></section>
-
-  <section id="services"><div class="wrap">
-    <h2 data-i18n="services.title"></h2>
-    <p class="lead" data-i18n="services.lead"></p>
-    <div class="services" id="serviceList"></div>
-  </div></section>
-
-  <section id="about"><div class="wrap">
-    <h2 data-i18n="about.title"></h2>
-    <div class="about">
-      <p data-i18n="about.text"></p>
-      <div class="skills" id="skillList" aria-label="Compétences"></div>
-    </div>
-  </div></section>
-
-  <section id="contact"><div class="wrap contact">
-    <h2 data-i18n="contact.title"></h2>
-    <p class="lead" data-i18n="contact.lead"></p>
-    <a class="mail" href="mailto:jerryjephte@gmail.com">jerryjephte@gmail.com</a>
-    <div class="btns">
-      <a class="btn ghost" href="https://github.com/KAMDEMJERRY" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/jerry-ndombou-714846302/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div></section>
-</main>
-
-<footer><div class="wrap"><span data-i18n="footer"></span></div></footer>
-
-<script>
-/* ====== CONTENU À MODIFIER / CONTENT TO EDIT ======
-   Tout ce qui est entre crochets [ ] est un exemple à remplacer. */
-const T = {
-  fr: {
-    "nav.projects":"Projets","nav.services":"Services","nav.about":"À propos","nav.contact":"Contact",
-    "hero.role":"[Étudiant en Master Data Science]",
-    "hero.pitch":"Je conçois des solutions data et logicielles, de l’idée jusqu’à la mise en production.",
-    "hero.cta1":"Voir mes projets","hero.cta2":"Me contacter","hero.cv":"Télécharger mon CV",
-    "projects.title":"Projets","projects.lead":"Une sélection de projets, avec le problème, ma démarche et les résultats.",
-    "services.title":"Ce que je peux faire pour vous","services.lead":"Pour une mission freelance ou un projet ponctuel.",
-    "about.title":"À propos",
-    "about.text":"[Présente-toi en 3 à 4 phrases : ton parcours, ce qui te motive, le type de poste ou de mission que tu recherches.]",
-    "contact.title":"Discutons de votre projet","contact.lead":"Une offre, une mission ou une question ? Écrivez-moi, je réponds sous 48 h.",
-    "footer":"© 2026 Ton Nom. Tous droits réservés.",
-    projects:[
-      {t:"[Titre du projet 1]",p:"[Le problème à résoudre, en une phrase.]",a:"[Ton approche et tes choix techniques.]",r:"[Résultat chiffré : précision, temps gagné, utilisateurs…]",tags:["Python","C++"],link:"https://github.com/ton-pseudo/projet-1"},
-      {t:"[Titre du projet 2]",p:"[Le problème à résoudre, en une phrase.]",a:"[Ton approche et tes choix techniques.]",r:"[Résultat chiffré ou démo en ligne.]",tags:["Java","Spring Boot"],link:"https://github.com/ton-pseudo/projet-2"},
-      {t:"[Titre du projet 3]",p:"[Le problème à résoudre, en une phrase.]",a:"[Ton approche et tes choix techniques.]",r:"[Résultat chiffré ou démo en ligne.]",tags:["Web","SQL"],link:"https://github.com/ton-pseudo/projet-3"}
-    ],
-    labels:{p:"Problème",a:"Approche",r:"Résultat",more:"Voir le code"},
-    services:[
-      {t:"[Analyse de données et machine learning]",d:"[Nettoyage, modèles prédictifs, tableaux de bord pour décider plus vite.]"},
-      {t:"[Développement web et mobile]",d:"[Applications sur mesure, de la maquette à la mise en ligne.]"},
-      {t:"[Automatisation et performance]",d:"[Scripts, pipelines et optimisation de code pour gagner du temps.]"}
-    ],
-    skills:["Python","C++","Java","SQL","Machine learning","Spring Boot","Android","Git"]
-  },
-  en: {
-    "nav.projects":"Projects","nav.services":"Services","nav.about":"About","nav.contact":"Contact",
-    "hero.role":"[Data Science Master’s student]",
-    "hero.pitch":"I build data and software solutions, from the first idea to production.",
-    "hero.cta1":"See my projects","hero.cta2":"Contact me","hero.cv":"Download my résumé",
-    "projects.title":"Projects","projects.lead":"A selection of projects, with the problem, my approach and the results.",
-    "services.title":"What I can do for you","services.lead":"For freelance work or one-off projects.",
-    "about.title":"About",
-    "about.text":"[Introduce yourself in 3 to 4 sentences: your background, what drives you, the kind of role or assignment you are looking for.]",
-    "contact.title":"Let’s talk about your project","contact.lead":"A job offer, a freelance assignment or a question? Write to me, I reply within 48 hours.",
-    "footer":"© 2026 Your Name. All rights reserved.",
-    projects:[
-      {t:"[Project title 1]",p:"[The problem to solve, in one sentence.]",a:"[Your approach and technical choices.]",r:"[Measurable result: accuracy, time saved, users…]",tags:["Python","C++"],link:"https://github.com/ton-pseudo/projet-1"},
-      {t:"[Project title 2]",p:"[The problem to solve, in one sentence.]",a:"[Your approach and technical choices.]",r:"[Measurable result or live demo.]",tags:["Java","Spring Boot"],link:"https://github.com/ton-pseudo/projet-2"},
-      {t:"[Project title 3]",p:"[The problem to solve, in one sentence.]",a:"[Your approach and technical choices.]",r:"[Measurable result or live demo.]",tags:["Web","SQL"],link:"https://github.com/ton-pseudo/projet-3"}
-    ],
-    labels:{p:"Problem",a:"Approach",r:"Result",more:"View the code"},
-    services:[
-      {t:"[Data analysis and machine learning]",d:"[Cleaning, predictive models and dashboards to decide faster.]"},
-      {t:"[Web and mobile development]",d:"[Custom applications, from mockup to launch.]"},
-      {t:"[Automation and performance]",d:"[Scripts, pipelines and code optimization to save time.]"}
-    ],
-    skills:["Python","C++","Java","SQL","Machine learning","Spring Boot","Android","Git"]
-  }
-};
-
-function render(lang){
-  const d = T[lang];
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-i18n]').forEach(el => { if (d[el.dataset.i18n]) el.textContent = d[el.dataset.i18n]; });
-  const cv = document.querySelector('[data-href-fr]');
-  cv.href = lang === 'fr' ? cv.dataset.hrefFr : cv.dataset.hrefEn;
-  const L = d.labels;
-  document.getElementById('projectList').innerHTML = d.projects.map(p => `
-    <article class="project">
-      <h3>${p.t}</h3>
-      <dl><dt>${L.p}</dt><dd>${p.p}</dd><dt>${L.a}</dt><dd>${p.a}</dd><dt>${L.r}</dt><dd>${p.r}</dd></dl>
-      <div class="tags">${p.tags.map(x => `<span>${x}</span>`).join('')}</div>
-      <a class="more" href="${p.link}" target="_blank" rel="noopener">${L.more}</a>
-    </article>`).join('');
-  document.getElementById('serviceList').innerHTML = d.services.map(s => `<div><h3>${s.t}</h3><p>${s.d}</p></div>`).join('');
-  document.getElementById('skillList').innerHTML = d.skills.map(s => `<span>${s}</span>`).join('');
-  document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
-  try { localStorage.setItem('lang', lang); } catch (e) {}
-}
-
-let start = 'fr';
-try { start = localStorage.getItem('lang') || (navigator.language || 'fr').slice(0,2); } catch (e) {}
-render(T[start] ? start : 'fr');
-document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => render(b.dataset.lang)));
-</script>
+  <header><div class="wrap"><nav aria-label="Navigation principale">
+    <a class="brand" href="#top" aria-label="Ndombou Kamdem Jerry — Accueil"><svg class="brand-logo" viewBox="0 0 40 40" role="img" aria-label="Logo NJ"><rect width="40" height="40" rx="9" fill="#14213d"/><path d="M10 10v20h5V18l10 12h5V10h-5v12L15 10h-5Z" fill="#eef1f4"/><circle cx="31" cy="9" r="4" fill="#2b50e6"/></svg><span class="brand-name">Ndombou Jerry</span></a>
+    <a class="link" href="#projects" data-i18n="nav.projects">Projets</a><a class="link" href="#about" data-i18n="nav.about">À propos</a><a class="link" href="#contact" data-i18n="nav.contact">Contact</a>
+    <div class="lang" role="group" aria-label="Langue / Language"><button type="button" data-lang="fr" aria-pressed="true">FR</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+  </nav></div></header>
+  <main id="top">
+    <div class="wrap hero"><p class="role" data-i18n="hero.role">Développeur logiciel & data scientist</p><h1>Ndombou Kamdem Jerry</h1><p class="pitch" data-i18n="hero.pitch">Je conçois des solutions logicielles et data, de la modélisation au développement d’applications utiles.</p><div class="btns"><a class="btn primary" href="#projects" data-i18n="hero.cta1">Découvrir mes projets</a><a class="btn ghost" href="#contact" data-i18n="hero.cta2">Me contacter</a><a class="btn ghost" href="cv-fr.pdf" data-i18n="hero.cv" data-href-fr="cv-fr.pdf" data-href-en="cv-en.pdf" download>Télécharger mon CV</a></div></div>
+    <section id="projects"><div class="wrap"><h2 data-i18n="projects.title">Projets sélectionnés</h2><p class="lead" data-i18n="projects.lead">Quelques réalisations en gestion cadastrale, génie civil et intelligence artificielle. Chaque fiche présente le besoin, le travail effectué et ce qui est disponible dans le dépôt.</p><div class="projects" id="projectList"></div></div></section>
+    <section id="about"><div class="wrap"><h2 data-i18n="about.title">À propos</h2><div class="about"><p data-i18n="about.text">Je suis développeur et data scientist, intéressé par la création d’outils concrets et l’application de l’intelligence artificielle à des problèmes réels. Mes projets couvrent le développement web, les API, le génie civil et l’apprentissage profond. Je privilégie des réalisations documentées, testables et faciles à faire évoluer.</p><div class="skills" id="skillList" aria-label="Compétences"></div></div></div></section>
+    <section id="contact"><div class="wrap contact"><h2 data-i18n="contact.title">Parlons de votre projet</h2><p class="lead" data-i18n="contact.lead">Pour échanger sur une collaboration, une opportunité ou l’un de mes projets, vous pouvez m’écrire.</p><a class="mail" href="mailto:jerryjephte@gmail.com">jerryjephte@gmail.com</a><div class="btns"><a class="btn ghost" href="https://github.com/KAMDEMJERRY" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn ghost" href="https://www.linkedin.com/in/jerry-ndombou-714846302/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></section>
+  </main>
+  <footer><div class="wrap"><span data-i18n="footer">© 2026 Ndombou Kamdem Jerry. Tous droits réservés.</span></div></footer>
+  <script>
+    const T={
+      fr:{
+        "nav.projects":"Projets","nav.about":"À propos","nav.contact":"Contact","hero.role":"Développeur logiciel & data scientist","hero.pitch":"Je conçois des solutions logicielles et data, de la modélisation au développement d’applications utiles.","hero.cta1":"Découvrir mes projets","hero.cta2":"Me contacter","hero.cv":"Télécharger mon CV","projects.title":"Projets sélectionnés","projects.lead":"Quelques réalisations en gestion cadastrale, génie civil et intelligence artificielle. Chaque fiche présente le besoin, le travail effectué et ce qui est disponible dans le dépôt.","about.title":"À propos","about.text":"Je suis développeur et data scientist, intéressé par la création d’outils concrets et l’application de l’intelligence artificielle à des problèmes réels. Mes projets couvrent le développement web, les API, le génie civil et l’apprentissage profond. Je privilégie des réalisations documentées, testables et faciles à faire évoluer.","contact.title":"Parlons de votre projet","contact.lead":"Pour échanger sur une collaboration, une opportunité ou l’un de mes projets, vous pouvez m’écrire.",footer:"© 2026 Ndombou Kamdem Jerry. Tous droits réservés.",
+        labels:{problem:"Besoin",work:"Réalisation",outcome:"Livrable",more:"Voir le dépôt"},
+        projects:[
+          {eyebrow:"Application web",title:"CadastreWeb — administration cadastrale",problem:"Gérer les lotissements, blocs, parcelles et propriétaires au même endroit.",work:"Application web avec gestion des données cadastrales, visualisation cartographique et fonctions d’import/export.",outcome:"Un outil de gestion cadastrale couvrant les entités principales et l’échange de données en CSV, Excel et JSON.",tags:["JavaScript","Cartographie","Leaflet / Mapbox","CSV · Excel · JSON"],link:"https://github.com/KAMDEMJERRY/cadastre_web"},
+          {eyebrow:"API · Génie civil",title:"GéoCivil — estimation et analyse de structures",problem:"Poser les bases d’une application d’accompagnement au dimensionnement de projets de maisons.",work:"API FastAPI avec PostgreSQL, comptes authentifiés par JWT, gestion de projets et prix par ville. Le moteur documenté couvre l’analyse d’éléments en béton armé selon les hypothèses BAEL.",outcome:"Socle d’API et endpoints d’analyse documentés ; le métré, les devis Excel et les rapports PDF sont indiqués comme étapes futures.",tags:["Python","FastAPI","PostgreSQL","JWT","BAEL"],link:"https://github.com/KAMDEMJERRY/Geocivil"},
+          {eyebrow:"Recherche · Deep learning",title:"CNN3D — classification d’images médicales",problem:"Explorer la classification d’images médicales 3D avec des réseaux convolutifs et de l’attention spatio-temporelle.",work:"Travaux sur des CNN 3D épars avec mécanisme d’attention flash ; dépôt C++ s’appuyant notamment sur Eigen, OpenCV, Boost et GoogleTest.",outcome:"Prototype de recherche et procédure de compilation décrits dans le dépôt. Les résultats expérimentaux ne sont pas chiffrés dans la documentation actuelle.",tags:["C++","CNN 3D","Imagerie médicale","OpenCV","Eigen"],link:"https://github.com/KAMDEMJERRY/CNN2"}
+        ],skills:["Python","C++","Java","SQL","Machine learning","FastAPI","PostgreSQL","Développement web","Git"]
+      },
+      en:{
+        "nav.projects":"Projects","nav.about":"About","nav.contact":"Contact","hero.role":"Software developer & data scientist","hero.pitch":"I build software and data solutions, from modeling to useful applications.","hero.cta1":"Explore my projects","hero.cta2":"Get in touch","hero.cv":"Download my résumé","projects.title":"Selected projects","projects.lead":"A selection of work in cadastral management, civil engineering and artificial intelligence. Each project explains the need, the work completed and what is available in the repository.","about.title":"About","about.text":"I am a developer and data scientist interested in building practical tools and applying artificial intelligence to real-world problems. My projects span web development, APIs, civil engineering and deep learning. I value work that is documented, testable and easy to extend.","contact.title":"Let’s talk about your project","contact.lead":"For a collaboration, an opportunity or a question about my projects, feel free to email me.",footer:"© 2026 Ndombou Kamdem Jerry. All rights reserved.",
+        labels:{problem:"Need",work:"What I built",outcome:"Deliverable",more:"View repository"},
+        projects:[
+          {eyebrow:"Web application",title:"CadastreWeb — cadastral administration",problem:"Manage subdivisions, blocks, plots and owners in one place.",work:"A web application for cadastral data management, map visualization and data import/export.",outcome:"A cadastral management tool covering the main entities and CSV, Excel and JSON data exchange.",tags:["JavaScript","Mapping","Leaflet / Mapbox","CSV · Excel · JSON"],link:"https://github.com/KAMDEMJERRY/cadastre_web"},
+          {eyebrow:"API · Civil engineering",title:"GéoCivil — structural analysis",problem:"Build the foundation of an application to support the design of house projects.",work:"A FastAPI and PostgreSQL API with JWT-authenticated accounts, project management and city-based pricing. The documented engine analyzes reinforced-concrete elements against stated BAEL assumptions.",outcome:"A documented API foundation and analysis endpoints; quantity takeoffs, Excel estimates and PDF reports are listed as future work.",tags:["Python","FastAPI","PostgreSQL","JWT","BAEL"],link:"https://github.com/KAMDEMJERRY/Geocivil"},
+          {eyebrow:"Research · Deep learning",title:"CNN3D — medical image classification",problem:"Explore 3D medical image classification with convolutional networks and spatiotemporal attention.",work:"Work on sparse 3D CNNs with flash attention; the C++ repository uses libraries including Eigen, OpenCV, Boost and GoogleTest.",outcome:"A research prototype and build instructions are documented in the repository. The current documentation does not report quantitative experimental results.",tags:["C++","3D CNN","Medical imaging","OpenCV","Eigen"],link:"https://github.com/KAMDEMJERRY/CNN2"}
+        ],skills:["Python","C++","Java","SQL","Machine learning","FastAPI","PostgreSQL","Web development","Git"]
+      }
+    };
+    function render(lang){
+      const d=T[lang];document.documentElement.lang=lang;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{const value=d[el.dataset.i18n];if(value)el.textContent=value;});
+      const cv=document.querySelector('[data-href-fr]');cv.href=lang==='fr'?cv.dataset.hrefFr:cv.dataset.hrefEn;
+      const L=d.labels;
+      document.getElementById('projectList').innerHTML=d.projects.map(p=>`<article class="project"><p class="eyebrow">${p.eyebrow}</p><h3>${p.title}</h3><dl><dt>${L.problem}</dt><dd>${p.problem}</dd><dt>${L.work}</dt><dd>${p.work}</dd><dt>${L.outcome}</dt><dd>${p.outcome}</dd></dl><div class="tags">${p.tags.map(tag=>`<span>${tag}</span>`).join('')}</div><a class="more" href="${p.link}" target="_blank" rel="noopener noreferrer">${L.more} ↗</a></article>`).join('');
+      document.getElementById('skillList').innerHTML=d.skills.map(skill=>`<span>${skill}</span>`).join('');
+      document.querySelectorAll('.lang button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===lang)));
+      try{localStorage.setItem('lang',lang)}catch(error){}
+    }
+    let start='fr';try{start=localStorage.getItem('lang')||(navigator.language||'fr').slice(0,2)}catch(error){}render(T[start]?start:'fr');
+    document.querySelectorAll('.lang button').forEach(button=>button.addEventListener('click',()=>render(button.dataset.lang)));
+  </script>
 </body>
 </html>
