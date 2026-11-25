@@ -22,7 +22,9 @@ a{color:inherit}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
 header{position:sticky;top:0;z-index:5;background:rgba(238,241,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav{display:flex;align-items:center;gap:22px;height:60px}
-nav .brand{font:700 1rem var(--head);text-decoration:none;margin-right:auto}
+nav .brand{display:flex;align-items:center;gap:10px;font:700 1rem var(--head);text-decoration:none;margin-right:auto}
+.brand-logo{display:block;width:38px;height:38px;flex:none}
+nav .brand-name{white-space:nowrap}
 nav a.link{text-decoration:none;font-weight:600;font-size:1rem;color:var(--muted)}
 nav a.link:hover{color:var(--accent)}
 .lang{display:flex;border:1px solid var(--ink);border-radius:6px;overflow:hidden}
@@ -59,6 +61,7 @@ h2{font:700 clamp(1.7rem,4vw,2.3rem)/1.15 var(--head);letter-spacing:-.02em;marg
 .contact .mail{font:700 clamp(1.4rem,4vw,2.4rem) var(--head);letter-spacing:-.02em;word-break:break-all;display:inline-block;margin:10px 0 28px}
 footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
 @media(max-width:760px){.about{grid-template-columns:1fr}nav .link{display:none}.hero{padding:64px 0 56px}}
+@media(max-width:420px){nav{gap:12px}.brand-name{display:none}.brand-logo{width:34px;height:34px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -66,7 +69,14 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px so
 <header>
   <div class="wrap">
     <nav aria-label="Navigation">
-      <a class="brand" href="#top">Ton Nom</a>
+      <a class="brand" href="#top" aria-label="Ndombou Jerry - Accueil">
+        <svg class="brand-logo" viewBox="0 0 40 40" role="img" aria-label="Logo NJ">
+          <rect width="40" height="40" rx="9" fill="#14213D"/>
+          <path d="M10 10v20h5V18l10 12h5V10h-5v12L15 10h-5Z" fill="#EEF1F4"/>
+          <circle cx="31" cy="9" r="4" fill="#2B50E6"/>
+        </svg>
+        <span class="brand-name">Ndombou Jerry</span>
+      </a>
       <a class="link" href="#projects" data-i18n="nav.projects"></a>
       <a class="link" href="#services" data-i18n="nav.services"></a>
       <a class="link" href="#about" data-i18n="nav.about"></a>
@@ -82,7 +92,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px so
 <main id="top">
   <div class="wrap hero">
     <p class="role" data-i18n="hero.role"></p>
-    <h1>Ton Nom</h1>
+    <h1>Ndombou Kamdem Jerry</h1>
     <p class="pitch" data-i18n="hero.pitch"></p>
     <div class="btns">
       <a class="btn primary" href="#projects" data-i18n="hero.cta1"></a>
@@ -114,10 +124,10 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px so
   <section id="contact"><div class="wrap contact">
     <h2 data-i18n="contact.title"></h2>
     <p class="lead" data-i18n="contact.lead"></p>
-    <a class="mail" href="mailto:ton.email@exemple.com">ton.email@exemple.com</a>
+    <a class="mail" href="mailto:jerryjephte@gmail.com">jerryjephte@gmail.com</a>
     <div class="btns">
-      <a class="btn ghost" href="https://github.com/ton-pseudo" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/KAMDEMJERRY" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/jerry-ndombou-714846302/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div></section>
 </main>
